@@ -1,0 +1,340 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#tudo{
+  width:100%;
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  background-color: rgba(0, 50, 0);
+}
+
+header{
+  display:flex;
+  flex-direction:column;
+}
+
+#cabeca{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding-top:2%;
+  width: 100%;
+  height:1%;
+}
+
+
+#cabeca2{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  align-items:center;
+}
+
+#ola{
+  margin-top:calc(11.5% - 160px);
+  display:flex;
+  justify-content:left;
+  margin-left:25.2%;
+  color:rgb(0, 100, 0);
+  font-size: 14px;
+  max-width:18%;
+}
+
+
+/* Nome da empresa*/
+
+.Logo_Principal{
+  display: flex;
+  margin-left:1.8%;
+  padding:18px 10px 0px 10px;
+  border-bottom-left-radius: 10px; 
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  border-top-right-radius: 10px;
+  filter: brightness(1);
+  background-color: rgb(255, 255, 255);
+}
+
+.Logo_Principal2{
+  display: flex;
+  margin-left:1%;
+  width:150px;
+  padding: 3px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  border-bottom-left-radius: 8px; 
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px; 
+  border-top-right-radius: 8px;
+  filter: brightness(1);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Barra de Menu*/
+
+#Menu {
+  display:flex;
+  padding:15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom-left-radius: 10px; 
+  border-top-left-radius: 10px;
+}
+
+#Menu ul li {
+  display: inline;
+  position: relative;
+}
+
+#Menu ul li a{
+  display: inline-block;
+  padding: 10px 10px; 
+  color:rgb(0, 100, 0);
+  text-decoration: none;
+  transition: all.3s; 
+  font-size: 15.5px;
+}
+
+#Menu ul li a:hover{
+  display: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px black;
+}
+
+
+#Menu2 {
+  display:flex;
+  margin-right:1%;
+}
+
+#Menu2 ul li {
+  display: inline;
+  position: relative;
+}
+
+#Menu2 ul li a{
+  display: inline-block;
+  padding: 10px 10px;
+  margin-top: 2%;
+  color:rgb(0, 100, 0);
+  text-decoration: none;
+  transition: all.3s; 
+  font-size: 15.5px;
+}
+
+#Menu2 ul li a:hover{
+  display: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px black;
+}
+
+.seta {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+
+/* Sub Menu*/
+
+#Menu ul ul{
+  display: none;
+  left: 0;
+  position: absolute;
+  z-index:9999;
+}
+
+#Menu ul li:hover ul{
+  display: block;
+}
+
+#Menu ul ul{
+  position: absolute;
+  font-size: 15.5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px black;
+}
+
+#Menu ul ul li a{
+  display: block;
+}
+
+#Menu ul ul li a:hover{
+  background-color: rgb(255, 255, 255) ;
+}
+
+
+/* Sub Menu 2*/
+
+#Menu2 ul ul{
+  display: none;
+  left: 0;
+  position: absolute;
+  z-index:9999;
+}
+
+#Menu2 ul li:hover ul{
+  display: block;
+}
+
+#Menu2 ul ul{
+  position: absolute;
+  font-size: 15.5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px black;
+}
+
+#Menu2 ul ul li a{
+  display: block;
+}
+
+#Menu2 ul ul li a:hover{
+  background-color: rgb(255, 255, 255) ;
+}
+
+
+
+.row{
+  background: none;
+}
+
+
+.intro {
+  background: none;
+  padding: 60px 30px;
+  color: #37474f; /* Dark teal text color */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2e7d32; /* Dark green title color */
+}
+
+.intro p {
+  font-size: 16px;
+  color: #546e7a; /* Teal text color */
+}
+
+.action {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background: #2e7d32; /* Dark green button background */
+  border: 2px solid #2e7d32;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-left: 5px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+a.btn:hover {
+  background: #1b5e20; /* Darker green on hover */
+  border-color: #1b5e20;
+  color: #ffffff;
+}
+
+.btn:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.github:before {
+  content: "\f09b";
+}
+
+.down:before {
+  content: "\f019";
+}
+
+.back:before {
+  content: "\f112";
+}
+
+.credit {
+  background: none;
+  padding: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: #546e7a; /* Teal text color */
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.credit span:before {
+  font-family: FontAwesome;
+  color: #000000; /* Dark red icon color */
+  content: "\f004";
+}
+
+.credit a {
+  color: #546e7a; /* Teal text color */
+  text-decoration: none;
+}
+
+.credit a:hover {
+  color: #2e7d32; /* Dark green color on hover */
+}
+
+.credit a:hover:after {
+  content: "\f08e";
+  font-size: 12px;
+  position: absolute;
+  margin: 3px;
+}
+
+main {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+article li {
+  color: #546e7a; /* Teal text color */
+  font-size: 16px;
+  margin-left: 20px;
+  line-height: 1.6;
+  padding: 5px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article p {
+  padding: 14px;
+  color: #37474f; /* Dark teal text color */
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.6;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    background-color: rgb(0, 65, 0,0.9) ;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+  }
+}
+

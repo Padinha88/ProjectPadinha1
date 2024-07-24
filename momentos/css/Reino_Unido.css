@@ -1,0 +1,294 @@
+#video {
+    visibility: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap');
+
+/* Corpo*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#tudo{
+    background-image: url(../img/Fundo.jpg);
+    box-sizing: border-box;
+    background-position:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    width:98.8vw;
+    height:102vh;
+}
+
+header{
+    width: 100%;
+    margin-top: -15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 20px;
+    
+}
+
+header .ola{
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    color:rgb(0, 100, 0);
+    font-size: 14px;
+}
+
+ /* Barra de Menu*/
+
+ #Menu {
+    position: absolute;
+    z-index: 2; 
+    top: 6%;
+    padding: 12px;
+    margin-left:52.1%;
+    width: 46%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+}
+
+#Menu ul li {
+    display: inline;
+    position: relative;
+}
+
+#Menu ul li a{
+    display: inline-block;
+    padding: 5px 10px; 
+    color:rgb(0, 100, 0);
+    text-decoration: none;
+    transition: all.3s; 
+    font-size: 15.5px;
+}
+
+#Menu ul li a:hover{
+    display: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+.seta {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+
+/* Sub Menu*/
+
+#Menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+#Menu ul li:hover ul{
+    display: block;
+}
+
+#Menu ul ul{
+    position: absolute;
+    font-size: 15.5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px black;
+}
+
+#Menu ul ul li a{
+    display: block;
+}
+
+#Menu ul ul li a:hover{
+    background-color: rgb(255, 255, 255) ;
+}
+
+/* Nome da empresa*/
+
+.Logo_Principal{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1000;
+    margin-left: 2%;
+    top: 19px;
+    padding: 5px;
+    width: 23%; 
+    height: 10.5%; 
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+    filter: brightness(1);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Texto Principal*/
+
+.Texto{
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    width: 40%;
+    height: 40%; 
+    margin-left: 50%;
+}
+
+.Texto ul li {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Text-Verde {
+    margin-left: 10%;
+    color: rgb(0, 100, 0);
+    font-size: 23px;
+}
+
+
+.Texto2 {
+    margin-left: 70.3%;
+    margin-top: -11.7%;
+}
+
+ 
+.Text-Branco {
+    margin-left: 13%;
+    color: #929090;
+    font-size: 23px;
+}
+
+/* Trailer*/
+
+.Botao{
+    position: absolute;
+    z-index: 10000; 
+    margin-left : 65%;
+    top: 47%;    
+    transition: transform 0.3s ease;
+    width: 6.5%; 
+}
+    
+.Botao:hover {
+    transform: translateY(5px);
+    cursor:pointer;
+   }
+   
+   .Botao:active {
+    transform: translateY(3px);
+   }
+   
+   .Botao::after {
+    content: "";
+    display: inline-block;
+    height: 140%;
+    width: 190%;
+    border-radius: 100px;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s;
+    margin-top: -185%;
+    margin-left:-34%;
+
+   }
+   
+   .Botao:hover::after {
+    background-color: rgb(0, 255, 8);
+    transform: scaleX(0.5) scaleY(0.5);
+    opacity: 0;
+   }
+
+/* Fundo*/
+
+#video {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2000;
+    width: 100%;
+    height: 101.5%;
+    background:black;
+}
+
+/* Texto Secundario*/
+
+.Texto_Sec{ 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 520px;
+    height: 79px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 21% 2% 0;
+    color: rgb(0, 100, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.Texto_Sec h3{
+    margin-top: 0.5%;
+    margin-left: 3%;
+}
+.Texto_Sec h5{
+    margin-top: -2%;
+    margin-left: 3%;
+}
+
+/* Redes Sociais*/
+
+.Facebook {
+    position: relative;
+    z-index: 1; 
+    width: 200px;
+    margin-top: -3% ;
+    display: flex; 
+    margin-left: 1103px; 
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;  
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+}
+
+.Facebook :hover {
+    transform: scale(1.1);
+}
+   
+.Facebook img {
+    object-fit: cover; 
+    margin: 3px; 
+    margin-left: 8px;
+    margin-top: 6px;
+    border-radius: 5px; 
+} 
+ 
+footer{
+    width: 100%;
+    height: 41px;
+    margin-top: 2.5%;
+    background-color: rgba(0, 50, 0);
+    display: flex;
+    flex-direction: inline;
+    align-items: center; 
+}
+
+footer .final h2{
+    width: 100%;
+    margin-left:2%;
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer .final_2 h2{
+    margin-top: 10%;
+    margin-left:829%;
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    width: 100%;
+    text-decoration: none;
+}

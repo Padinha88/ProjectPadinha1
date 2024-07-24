@@ -1,0 +1,711 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap');
+
+/* Corpo*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#tudo{
+    width:100%;
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 50, 0);
+}
+
+header{
+    display:flex;
+    flex-direction:column;
+}
+
+#cabeca{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-top:2%;
+    width: 100%;
+    height:1%;
+}
+
+
+#cabeca2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    align-items:center;
+}
+
+#ola{
+    margin-top:calc(11.5% - 160px);
+    display:flex;
+    justify-content:left;
+    margin-left:25.2%;
+    color:rgb(0, 100, 0);
+    font-size: 14px;
+    max-width:18%;
+}
+
+
+/* Nome da empresa*/
+
+.Logo_Principal{
+    display: flex;
+    margin-left:1.8%;
+    padding:18px 10px 0px 10px;
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+    filter: brightness(1);
+    background-color: rgb(255, 255, 255);
+}
+
+.Logo_Principal2{
+    display: flex;
+    margin-left:1%;
+    width:150px;
+    padding: 3px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 8px; 
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px; 
+    border-top-right-radius: 8px;
+    filter: brightness(1);
+    background-color: rgb(255, 255, 255);
+}
+
+ /* Barra de Menu*/
+
+#Menu {
+    display:flex;
+    padding:15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+}
+
+#Menu ul li {
+    display: inline;
+    position: relative;
+}
+
+#Menu ul li a{
+    display: inline-block;
+    padding: 10px 10px; 
+    color:rgb(0, 100, 0);
+    text-decoration: none;
+    transition: all.3s; 
+    font-size: 15.5px;
+}
+
+#Menu ul li a:hover{
+    display: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+
+#Menu2 {
+    display:flex;
+    margin-right:1%;
+}
+
+#Menu2 ul li {
+    display: inline;
+    position: relative;
+}
+
+#Menu2 ul li a{
+    display: inline-block;
+    padding: 10px 10px; 
+    color:rgb(0, 100, 0);
+    text-decoration: none;
+    transition: all.3s; 
+    font-size: 15.5px;
+}
+
+#Menu2 ul li a:hover{
+    display: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+.seta {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+
+/* Sub Menu*/
+
+#Menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    z-index:9999;
+}
+
+#Menu ul li:hover ul{
+    display: block;
+}
+
+#Menu ul ul{
+    position: absolute;
+    font-size: 15.5px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+#Menu ul ul li a{
+    display: block;
+}
+
+#Menu ul ul li a:hover{
+    background-color: rgb(255, 255, 255) ;
+}
+
+
+
+/* Sub Menu 2*/
+
+#Menu2 ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    z-index:9999;
+}
+
+#Menu2 ul li:hover ul{
+    display: block;
+}
+
+#Menu2 ul ul{
+    position: absolute;
+    font-size: 15.5px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px black;
+}
+
+#Menu2 ul ul li a{
+    display: block;
+}
+
+#Menu2 ul ul li a:hover{
+    background-color: rgb(255, 255, 255) ;
+}
+
+
+
+/* Texto Principal*/
+
+#slogan{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    margin-left: 51%;
+    margin-top:calc(11.5% - 160px);
+    color:rgb(0, 100, 0);
+    font-size: 14px;
+
+    max-width:30%;
+    font-size: 23px;
+}
+
+.Text-Verde {
+    color: rgb(0, 100, 0);
+}
+
+#descubra_como_momentos{
+    display: flex;
+    justify-content:center;
+}
+
+#fazer_diferenca{
+    display: flex;
+    justify-content:center;
+    padding-top: 8px;
+}
+
+#botao_video{
+    display: flex;
+    justify-content:center;
+}
+
+#botao_v{
+    display: flex;
+    justify-content:center;
+    width:fit-content;
+}
+
+
+#momentos_slogan{
+    margin-left: 2px;
+    display: flex;
+}
+ 
+.Text-Branco {
+    color: #929090;
+}
+
+/* Fundo*/
+
+#video {
+    visibility: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    height: 109%;
+    background:black;
+}
+
+#botao_video2{
+    position: absolute;
+    visibility: hidden;
+    right: 5%;
+    bottom: 10%;
+    z-index: 1000;
+    width: 300px ;
+
+}
+
+/* Texto Secundario*/
+
+#text_sec{ 
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:0;
+    bottom:8%;
+    padding:10px 2%;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px;
+    font-size: 13px;
+    color: rgb(0, 100, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#text_sec h3{
+    margin-top: 0.5%;
+}
+#text_sec h5{
+    margin-top: 0.5%;
+}
+
+/* Redes Sociais*/
+
+.Facebook {
+    position: fixed;
+    right:0%;
+    bottom:9%;
+    width: 200px;
+    display: flex; 
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;  
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 10px;
+}
+
+.Facebook :hover {
+    transform: scale(1.1);
+}
+   
+.Facebook img {
+    object-fit: cover; 
+    margin: 3px; 
+    margin-left: 8px;
+    margin-top: 6px;
+    border-radius: 5px; 
+} 
+ 
+footer{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    font-size: 0.8em;
+    background-color: rgba(0, 50, 0);
+    color:rgba(255, 255, 255, 0.7);
+    padding:10px 2%;
+
+}
+
+.cx_footer{
+    display:flex;
+}
+
+.transparente{
+    background-color: rgba(0, 50, 0, 0.8); 
+}
+
+
+main{
+    min-height: 90vh;
+}
+
+.box_ola {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: auto;
+    background: #484;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    border-radius:20px;
+    max-width:100%;
+
+  }
+  
+  .sb1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #484;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #484;
+    left: -10px;
+    top: 50%;
+  }
+
+
+
+.anima_botao{
+    transition: transform 0.3s ease;
+}
+    
+.anima_botao:hover {
+    transform: translateY(5px);
+    cursor:pointer;
+}
+
+
+/* Estrutura principal do site */
+
+.meio{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+
+.esq{
+    display:flex;
+    flex-direction:column;
+    width: 60%;
+}
+
+.esq img {
+    border-radius:10px;
+}
+
+.esq h1{
+    border-radius:10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 50, 0, 0.8)
+}
+
+.dir{
+    display: flex;
+    width:35%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 50, 0, 0.8);
+    padding:1.5%;
+    border-radius:10px;
+    text-align: justify;
+}
+
+.dir .text-main{
+    text-align: center;
+}
+
+.dir .text-main2{
+    text-align: center;
+}
+
+.dir .btn {
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 65, 0,0.9) ;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button .dir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dir video {
+    padding: 10px;
+    width: 100%; 
+    height: auto;
+}
+
+/* Sobre Nos*/
+
+.texto_sobre{
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.Patrocinadores{
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Sobre Nos Parte de Baixo*/
+
+.baixo {
+    position: absolute;
+    top: 141%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 68%;
+    padding: 40px;
+    background-color: rgba(0, 50, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.baixo h3{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.mensagem textarea{
+    margin-top: -3%;
+    border: none;
+    outline: none;
+    align-items: end;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+}    
+
+.mensagem ::placeholder {
+ color:rgb(255, 255, 255); 
+ text-align: left;
+}
+
+.mensagem input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 5px; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateX(10%);
+    background-color: rgb(0, 65, 0,0.9);
+    color: rgb(255, 255, 255);
+}
+
+.mapBox {
+    position: relative; 
+    margin-top: -50%;
+    width: 80%;
+    height: 360px;
+    background: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+    transform: translateX(100%); 
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*Login*/
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 50, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 50, 0, 0.9);
+}
+
+.login h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.login .caixalogin {
+    position: relative;
+}
+
+.login .caixalogin input {
+    width: 100%;
+    padding: 9px 0;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: transparent;
+}
+
+.login .caixalogin label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login .caixalogin input:focus ~ label, 
+.login .caixalogin input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.login input[type="submit"]{
+    transform: translateX(110%);
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 65, 0,0.9) ;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.conta{
+    color: white;
+}
+.conta a{
+    color: rgb(1, 255, 1);
+}
+
+/*Criar_Conta*/
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.criar {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 50, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 50, 0, 0.9);
+}
+
+.criar h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.criar .caixacriar {
+    position: relative;
+}
+
+.criar .caixacriar input {
+    width: 100%;
+    padding: 9px 0;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: transparent;
+}
+
+.criar .caixacriar label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.criar .caixacriar input:focus ~ label, 
+.criar .caixacriar input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: rgb(255, 255, 255);
+}
+
+.criar input[type="submit"]{
+    transform: translateX(110%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 65, 0,0.9) ;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.conta{
+    color: white;
+}
+.conta a{
+    color: rgb(1, 255, 1);
+}
+
+
